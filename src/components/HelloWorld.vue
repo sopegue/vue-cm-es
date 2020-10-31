@@ -19,8 +19,8 @@ export default {
     };
   },
   methods: {
-    onMykeyup(e, var1, var2) {
-      console.log(e.target.value, " n ", var1, " n ", var2);
+    onMykeyup(varr) {
+      console.log(varr.event.target.value, " n ", varr.var1, " n ", varr.var2);
     },
   },
 };

@@ -1,5 +1,8 @@
 <template>
-  <input type="text" @keyup="$emit('my-keyup', $event, var1, var2)" />
+  <input
+    type="text"
+    @keyup="$emit('my-keyup', { event: $event, var1: var1, var2: var2 })"
+  />
 </template>
 
 <script>
